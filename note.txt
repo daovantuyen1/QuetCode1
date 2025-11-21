@@ -1,0 +1,9 @@
+VI DU SU DUNG jwt token xac thuc cho asp.net web mvc call to asp.net web api
+
+1. tich hop va su dung jwt token vao web api asp.net  , call from web mvc
+
+https://www.c-sharpcorner.com/article/asp-net-web-api-2-creating-and-validating-jwt-json-web-token/
+
+2. de call swagger su dung duong link /swagger:
+   vd:http://localhost/swagger
+

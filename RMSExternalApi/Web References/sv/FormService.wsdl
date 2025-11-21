@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ThrowInternetEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ServiceIn">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ThrowInternetEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowInternetEmailResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ServiceOut">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Infocode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FHWSoap" type="tns:FHWSoap" />
+      <s:complexType name="FHWSoap">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserPWD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IpAddress" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="ThrowPickList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowPickListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowPickListResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowVoip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowVoipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowVoipResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowWareless">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowWarelessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowWarelessResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowUc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowUcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowUcResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowWWW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowWWWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowWWWResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowVPN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowVPNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowVPNResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowTelPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowTelPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowTelPasswordResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowNewTelPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowNewTelPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowNewTelPasswordResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowSpecialNet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowSpecialNetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowSpecialNetResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowNetwork">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowNetworkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowNetworkResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowNetletter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThrowNetletterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThrowNetletterResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidCostNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidCostNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidCostNoResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewValidCostNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewValidCostNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewValidCostNoResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidIEName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidIENameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidIENameResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFormStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFormStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFormStatusResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryAccoutByGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="si" type="tns:ServiceIn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryAccoutByGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryAccoutByGroupResult" type="tns:ServiceOut" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ThrowInternetEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowInternetEmail" />
+  </wsdl:message>
+  <wsdl:message name="ThrowInternetEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowInternetEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowInternetEmailFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowPickListSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowPickList" />
+  </wsdl:message>
+  <wsdl:message name="ThrowPickListSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowPickListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowPickListFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowVoipSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowVoip" />
+  </wsdl:message>
+  <wsdl:message name="ThrowVoipSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowVoipResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowVoipFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowWarelessSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowWareless" />
+  </wsdl:message>
+  <wsdl:message name="ThrowWarelessSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowWarelessResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowWarelessFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowUcSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowUc" />
+  </wsdl:message>
+  <wsdl:message name="ThrowUcSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowUcResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowUcFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowWWWSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowWWW" />
+  </wsdl:message>
+  <wsdl:message name="ThrowWWWSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowWWWResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowWWWFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowVPNSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowVPN" />
+  </wsdl:message>
+  <wsdl:message name="ThrowVPNSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowVPNResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowVPNFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowTelPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowTelPassword" />
+  </wsdl:message>
+  <wsdl:message name="ThrowTelPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowTelPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowTelPasswordFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNewTelPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowNewTelPassword" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNewTelPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowNewTelPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNewTelPasswordFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowSpecialNetSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowSpecialNet" />
+  </wsdl:message>
+  <wsdl:message name="ThrowSpecialNetSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowSpecialNetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowSpecialNetFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNetworkSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowNetwork" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNetworkSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowNetworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNetworkFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNetletterSoapIn">
+    <wsdl:part name="parameters" element="tns:ThrowNetletter" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNetletterSoapOut">
+    <wsdl:part name="parameters" element="tns:ThrowNetletterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThrowNetletterFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ValidCostNoSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidCostNo" />
+  </wsdl:message>
+  <wsdl:message name="ValidCostNoSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidCostNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidCostNoFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="NewValidCostNoSoapIn">
+    <wsdl:part name="parameters" element="tns:NewValidCostNo" />
+  </wsdl:message>
+  <wsdl:message name="NewValidCostNoSoapOut">
+    <wsdl:part name="parameters" element="tns:NewValidCostNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewValidCostNoFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="ValidIENameSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidIEName" />
+  </wsdl:message>
+  <wsdl:message name="ValidIENameSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidIENameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidIENameFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="GetFormStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFormStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetFormStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFormStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFormStatusFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:message name="QueryAccoutByGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryAccoutByGroup" />
+  </wsdl:message>
+  <wsdl:message name="QueryAccoutByGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryAccoutByGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryAccoutByGroupFHWSoap">
+    <wsdl:part name="FHWSoap" element="tns:FHWSoap" />
+  </wsdl:message>
+  <wsdl:portType name="FormServiceSoap">
+    <wsdl:operation name="ThrowInternetEmail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉Internet Email帳號到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowInternetEmailSoapIn" />
+      <wsdl:output message="tns:ThrowInternetEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowPickList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉領料單到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowPickListSoapIn" />
+      <wsdl:output message="tns:ThrowPickListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowVoip">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉Voip帳號到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowVoipSoapIn" />
+      <wsdl:output message="tns:ThrowVoipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowWareless">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉無線帳號到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowWarelessSoapIn" />
+      <wsdl:output message="tns:ThrowWarelessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowUc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉UC帳號到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowUcSoapIn" />
+      <wsdl:output message="tns:ThrowUcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowWWW">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉WWW帳號到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowWWWSoapIn" />
+      <wsdl:output message="tns:ThrowWWWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowVPN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉VPN帳號到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowVPNSoapIn" />
+      <wsdl:output message="tns:ThrowVPNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowTelPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉TelPassword帳號到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowTelPasswordSoapIn" />
+      <wsdl:output message="tns:ThrowTelPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNewTelPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉TelPassword帳號到中央網通(新)</wsdl:documentation>
+      <wsdl:input message="tns:ThrowNewTelPasswordSoapIn" />
+      <wsdl:output message="tns:ThrowNewTelPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowSpecialNet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉特殊網絡申請單到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowSpecialNetSoapIn" />
+      <wsdl:output message="tns:ThrowSpecialNetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNetwork">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋通信網絡服務申請單到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowNetworkSoapIn" />
+      <wsdl:output message="tns:ThrowNetworkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNetletter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">拋轉網信帳號申請單到中央網通</wsdl:documentation>
+      <wsdl:input message="tns:ThrowNetletterSoapIn" />
+      <wsdl:output message="tns:ThrowNetletterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidCostNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">驗證費用代碼是否正常</wsdl:documentation>
+      <wsdl:input message="tns:ValidCostNoSoapIn" />
+      <wsdl:output message="tns:ValidCostNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NewValidCostNo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">驗證費用代碼是否正常(新)</wsdl:documentation>
+      <wsdl:input message="tns:NewValidCostNoSoapIn" />
+      <wsdl:output message="tns:NewValidCostNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidIEName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">驗證IE帳號名是否重名</wsdl:documentation>
+      <wsdl:input message="tns:ValidIENameSoapIn" />
+      <wsdl:output message="tns:ValidIENameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFormStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根據單號查詢表單狀態</wsdl:documentation>
+      <wsdl:input message="tns:GetFormStatusSoapIn" />
+      <wsdl:output message="tns:GetFormStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryAccoutByGroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根據事業群查詢帳號</wsdl:documentation>
+      <wsdl:input message="tns:QueryAccoutByGroupSoapIn" />
+      <wsdl:output message="tns:QueryAccoutByGroupSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FormServiceSoap" type="tns:FormServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ThrowInternetEmail">
+      <soap:operation soapAction="http://tempuri.org/ThrowInternetEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowInternetEmailFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowPickList">
+      <soap:operation soapAction="http://tempuri.org/ThrowPickList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowPickListFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowVoip">
+      <soap:operation soapAction="http://tempuri.org/ThrowVoip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowVoipFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowWareless">
+      <soap:operation soapAction="http://tempuri.org/ThrowWareless" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowWarelessFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowUc">
+      <soap:operation soapAction="http://tempuri.org/ThrowUc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowUcFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowWWW">
+      <soap:operation soapAction="http://tempuri.org/ThrowWWW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowWWWFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowVPN">
+      <soap:operation soapAction="http://tempuri.org/ThrowVPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowVPNFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowTelPassword">
+      <soap:operation soapAction="http://tempuri.org/ThrowTelPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowTelPasswordFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNewTelPassword">
+      <soap:operation soapAction="http://tempuri.org/ThrowNewTelPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowNewTelPasswordFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowSpecialNet">
+      <soap:operation soapAction="http://tempuri.org/ThrowSpecialNet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowSpecialNetFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNetwork">
+      <soap:operation soapAction="http://tempuri.org/ThrowNetwork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowNetworkFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNetletter">
+      <soap:operation soapAction="http://tempuri.org/ThrowNetletter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ThrowNetletterFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidCostNo">
+      <soap:operation soapAction="http://tempuri.org/ValidCostNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ValidCostNoFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewValidCostNo">
+      <soap:operation soapAction="http://tempuri.org/NewValidCostNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:NewValidCostNoFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidIEName">
+      <soap:operation soapAction="http://tempuri.org/ValidIEName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ValidIENameFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormStatus">
+      <soap:operation soapAction="http://tempuri.org/GetFormStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFormStatusFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAccoutByGroup">
+      <soap:operation soapAction="http://tempuri.org/QueryAccoutByGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:QueryAccoutByGroupFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FormServiceSoap12" type="tns:FormServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ThrowInternetEmail">
+      <soap12:operation soapAction="http://tempuri.org/ThrowInternetEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowInternetEmailFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowPickList">
+      <soap12:operation soapAction="http://tempuri.org/ThrowPickList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowPickListFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowVoip">
+      <soap12:operation soapAction="http://tempuri.org/ThrowVoip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowVoipFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowWareless">
+      <soap12:operation soapAction="http://tempuri.org/ThrowWareless" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowWarelessFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowUc">
+      <soap12:operation soapAction="http://tempuri.org/ThrowUc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowUcFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowWWW">
+      <soap12:operation soapAction="http://tempuri.org/ThrowWWW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowWWWFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowVPN">
+      <soap12:operation soapAction="http://tempuri.org/ThrowVPN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowVPNFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowTelPassword">
+      <soap12:operation soapAction="http://tempuri.org/ThrowTelPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowTelPasswordFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNewTelPassword">
+      <soap12:operation soapAction="http://tempuri.org/ThrowNewTelPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowNewTelPasswordFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowSpecialNet">
+      <soap12:operation soapAction="http://tempuri.org/ThrowSpecialNet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowSpecialNetFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNetwork">
+      <soap12:operation soapAction="http://tempuri.org/ThrowNetwork" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowNetworkFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThrowNetletter">
+      <soap12:operation soapAction="http://tempuri.org/ThrowNetletter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ThrowNetletterFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidCostNo">
+      <soap12:operation soapAction="http://tempuri.org/ValidCostNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ValidCostNoFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewValidCostNo">
+      <soap12:operation soapAction="http://tempuri.org/NewValidCostNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:NewValidCostNoFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidIEName">
+      <soap12:operation soapAction="http://tempuri.org/ValidIEName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ValidIENameFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFormStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetFormStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetFormStatusFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAccoutByGroup">
+      <soap12:operation soapAction="http://tempuri.org/QueryAccoutByGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:QueryAccoutByGroupFHWSoap" part="FHWSoap" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FormService">
+    <wsdl:port name="FormServiceSoap" binding="tns:FormServiceSoap">
+      <soap:address location="http://10.197.10.186:9002/FormService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FormServiceSoap12" binding="tns:FormServiceSoap12">
+      <soap12:address location="http://10.197.10.186:9002/FormService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

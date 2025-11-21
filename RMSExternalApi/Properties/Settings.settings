@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MedicineApi.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MedicineApi_sv_FormService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.197.10.186:9002/FormService.asmx</Value>
+    </Setting>
+    <Setting Name="MedicineApi_ElistQuerySV_ElistQuery" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.132.37.98:8006/personal/ElistQuery.asmx</Value>
+    </Setting>
+    <Setting Name="MedicineApi_PostmanSv_PostmanService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.224.69.100:8080/postman/postmanservice.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

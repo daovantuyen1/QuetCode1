@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendHaloMgs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_SystemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_DocNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_SignEmpNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_CallBackUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_HaloMgs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_JsonShowData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendHaloMgsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendHaloMgsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendHaloMgsWithScreenShot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_SystemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_DocNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_SignEmpNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_CallBackUrl" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="_AllowForward" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="_HaloMgs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_JsonShowData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_ScreenShotUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendHaloMgsWithScreenShotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendHaloMgsWithScreenShotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendHaloMgsWithFreeSpace">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_SystemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_DocNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_SignEmpNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_CallBackUrl" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="_AllowForward" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="_HaloMgs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_JsonShowData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_ScreenShotUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_FreeSpaceHtml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendHaloMgsWithFreeSpaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendHaloMgsWithFreeSpaceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendHaloMgsWithForward">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_SystemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_DocNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_SignEmpNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_CallBackUrl" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="_AllowForward" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="_HaloMgs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_JsonShowData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_ScreenShotUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendHaloMgsWithForwardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendHaloMgsWithForwardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_DocNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_SignEmpNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_HaloMgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_DocNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSignHistory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_OrderNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_ApproverId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_ApproverTitle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_ApproverSuggest" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_Status" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="_ApprovalTime" nillable="true" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSignHistoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSignHistoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_EmpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpInfomation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_EmpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpInfomationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpInfomationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmp_Agent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_EmpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmp_AgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmp_AgentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpAgent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_EmpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpAgentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_EmpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpLevelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpManagers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_EmpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpManagersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpManagersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_EmpNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpMailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Select">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ConStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_CMD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Execute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ConStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_CMD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendHaloMgsSoapIn">
+    <wsdl:part name="parameters" element="tns:SendHaloMgs" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsSoapOut">
+    <wsdl:part name="parameters" element="tns:SendHaloMgsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithScreenShotSoapIn">
+    <wsdl:part name="parameters" element="tns:SendHaloMgsWithScreenShot" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithScreenShotSoapOut">
+    <wsdl:part name="parameters" element="tns:SendHaloMgsWithScreenShotResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithFreeSpaceSoapIn">
+    <wsdl:part name="parameters" element="tns:SendHaloMgsWithFreeSpace" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithFreeSpaceSoapOut">
+    <wsdl:part name="parameters" element="tns:SendHaloMgsWithFreeSpaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithForwardSoapIn">
+    <wsdl:part name="parameters" element="tns:SendHaloMgsWithForward" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithForwardSoapOut">
+    <wsdl:part name="parameters" element="tns:SendHaloMgsWithForwardResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateOrder" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSignHistorySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSignHistory" />
+  </wsdl:message>
+  <wsdl:message name="InsertSignHistorySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSignHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpName" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpInfomationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpInfomation" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpInfomationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpInfomationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmp_AgentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmp_Agent" />
+  </wsdl:message>
+  <wsdl:message name="GetEmp_AgentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmp_AgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpAgent" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpLevel" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpManagersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpManagers" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpManagersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpManagersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpMailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpMail" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpMailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectSoapIn">
+    <wsdl:part name="parameters" element="tns:Select" />
+  </wsdl:message>
+  <wsdl:message name="SelectSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSoapIn">
+    <wsdl:part name="parameters" element="tns:Execute" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsHttpGetIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithScreenShotHttpGetIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_AllowForward" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+    <wsdl:part name="_ScreenShotUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithScreenShotHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithFreeSpaceHttpGetIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_AllowForward" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+    <wsdl:part name="_ScreenShotUrl" type="s:string" />
+    <wsdl:part name="_FreeSpaceHtml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithFreeSpaceHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithForwardHttpGetIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_AllowForward" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+    <wsdl:part name="_ScreenShotUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithForwardHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderHttpGetIn">
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderStatusHttpGetIn">
+    <wsdl:part name="_DocNO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpNameHttpGetIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpInfomationHttpGetIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpInfomationHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetEmp_AgentHttpGetIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmp_AgentHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpAgentHttpGetIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpAgentHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpLevelHttpGetIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpLevelHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpManagersHttpGetIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpManagersHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpMailHttpGetIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpMailHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SelectHttpGetIn">
+    <wsdl:part name="_ConStr" type="s:string" />
+    <wsdl:part name="_CMD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SelectHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteHttpGetIn">
+    <wsdl:part name="_ConStr" type="s:string" />
+    <wsdl:part name="_CMD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsHttpPostIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithScreenShotHttpPostIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_AllowForward" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+    <wsdl:part name="_ScreenShotUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithScreenShotHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithFreeSpaceHttpPostIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_AllowForward" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+    <wsdl:part name="_ScreenShotUrl" type="s:string" />
+    <wsdl:part name="_FreeSpaceHtml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithFreeSpaceHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithForwardHttpPostIn">
+    <wsdl:part name="_SystemName" type="s:string" />
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_CallBackUrl" type="s:string" />
+    <wsdl:part name="_AllowForward" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+    <wsdl:part name="_JsonShowData" type="s:string" />
+    <wsdl:part name="_ScreenShotUrl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendHaloMgsWithForwardHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderHttpPostIn">
+    <wsdl:part name="_DocNO" type="s:string" />
+    <wsdl:part name="_SignEmpNo" type="s:string" />
+    <wsdl:part name="_HaloMgs" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderStatusHttpPostIn">
+    <wsdl:part name="_DocNO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderStatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpNameHttpPostIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpInfomationHttpPostIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpInfomationHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetEmp_AgentHttpPostIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmp_AgentHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpAgentHttpPostIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpAgentHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpLevelHttpPostIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpLevelHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpManagersHttpPostIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpManagersHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpMailHttpPostIn">
+    <wsdl:part name="_EmpNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpMailHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SelectHttpPostIn">
+    <wsdl:part name="_ConStr" type="s:string" />
+    <wsdl:part name="_CMD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SelectHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteHttpPostIn">
+    <wsdl:part name="_ConStr" type="s:string" />
+    <wsdl:part name="_CMD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="PostmanServiceSoap">
+    <wsdl:operation name="SendHaloMgs">
+      <wsdl:input message="tns:SendHaloMgsSoapIn" />
+      <wsdl:output message="tns:SendHaloMgsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithScreenShot">
+      <wsdl:input message="tns:SendHaloMgsWithScreenShotSoapIn" />
+      <wsdl:output message="tns:SendHaloMgsWithScreenShotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithFreeSpace">
+      <wsdl:input message="tns:SendHaloMgsWithFreeSpaceSoapIn" />
+      <wsdl:output message="tns:SendHaloMgsWithFreeSpaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithForward">
+      <wsdl:input message="tns:SendHaloMgsWithForwardSoapIn" />
+      <wsdl:output message="tns:SendHaloMgsWithForwardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <wsdl:input message="tns:UpdateOrderSoapIn" />
+      <wsdl:output message="tns:UpdateOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <wsdl:input message="tns:GetOrderStatusSoapIn" />
+      <wsdl:output message="tns:GetOrderStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSignHistory">
+      <wsdl:input message="tns:InsertSignHistorySoapIn" />
+      <wsdl:output message="tns:InsertSignHistorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <wsdl:input message="tns:GetEmpNameSoapIn" />
+      <wsdl:output message="tns:GetEmpNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfomation">
+      <wsdl:input message="tns:GetEmpInfomationSoapIn" />
+      <wsdl:output message="tns:GetEmpInfomationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmp_Agent">
+      <wsdl:input message="tns:GetEmp_AgentSoapIn" />
+      <wsdl:output message="tns:GetEmp_AgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpAgent">
+      <wsdl:input message="tns:GetEmpAgentSoapIn" />
+      <wsdl:output message="tns:GetEmpAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpLevel">
+      <wsdl:input message="tns:GetEmpLevelSoapIn" />
+      <wsdl:output message="tns:GetEmpLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpManagers">
+      <wsdl:input message="tns:GetEmpManagersSoapIn" />
+      <wsdl:output message="tns:GetEmpManagersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpMail">
+      <wsdl:input message="tns:GetEmpMailSoapIn" />
+      <wsdl:output message="tns:GetEmpMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Select">
+      <wsdl:input message="tns:SelectSoapIn" />
+      <wsdl:output message="tns:SelectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <wsdl:input message="tns:ExecuteSoapIn" />
+      <wsdl:output message="tns:ExecuteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PostmanServiceHttpGet">
+    <wsdl:operation name="SendHaloMgs">
+      <wsdl:input message="tns:SendHaloMgsHttpGetIn" />
+      <wsdl:output message="tns:SendHaloMgsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithScreenShot">
+      <wsdl:input message="tns:SendHaloMgsWithScreenShotHttpGetIn" />
+      <wsdl:output message="tns:SendHaloMgsWithScreenShotHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithFreeSpace">
+      <wsdl:input message="tns:SendHaloMgsWithFreeSpaceHttpGetIn" />
+      <wsdl:output message="tns:SendHaloMgsWithFreeSpaceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithForward">
+      <wsdl:input message="tns:SendHaloMgsWithForwardHttpGetIn" />
+      <wsdl:output message="tns:SendHaloMgsWithForwardHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <wsdl:input message="tns:UpdateOrderHttpGetIn" />
+      <wsdl:output message="tns:UpdateOrderHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <wsdl:input message="tns:GetOrderStatusHttpGetIn" />
+      <wsdl:output message="tns:GetOrderStatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <wsdl:input message="tns:GetEmpNameHttpGetIn" />
+      <wsdl:output message="tns:GetEmpNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfomation">
+      <wsdl:input message="tns:GetEmpInfomationHttpGetIn" />
+      <wsdl:output message="tns:GetEmpInfomationHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmp_Agent">
+      <wsdl:input message="tns:GetEmp_AgentHttpGetIn" />
+      <wsdl:output message="tns:GetEmp_AgentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpAgent">
+      <wsdl:input message="tns:GetEmpAgentHttpGetIn" />
+      <wsdl:output message="tns:GetEmpAgentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpLevel">
+      <wsdl:input message="tns:GetEmpLevelHttpGetIn" />
+      <wsdl:output message="tns:GetEmpLevelHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpManagers">
+      <wsdl:input message="tns:GetEmpManagersHttpGetIn" />
+      <wsdl:output message="tns:GetEmpManagersHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpMail">
+      <wsdl:input message="tns:GetEmpMailHttpGetIn" />
+      <wsdl:output message="tns:GetEmpMailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Select">
+      <wsdl:input message="tns:SelectHttpGetIn" />
+      <wsdl:output message="tns:SelectHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <wsdl:input message="tns:ExecuteHttpGetIn" />
+      <wsdl:output message="tns:ExecuteHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="PostmanServiceHttpPost">
+    <wsdl:operation name="SendHaloMgs">
+      <wsdl:input message="tns:SendHaloMgsHttpPostIn" />
+      <wsdl:output message="tns:SendHaloMgsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithScreenShot">
+      <wsdl:input message="tns:SendHaloMgsWithScreenShotHttpPostIn" />
+      <wsdl:output message="tns:SendHaloMgsWithScreenShotHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithFreeSpace">
+      <wsdl:input message="tns:SendHaloMgsWithFreeSpaceHttpPostIn" />
+      <wsdl:output message="tns:SendHaloMgsWithFreeSpaceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithForward">
+      <wsdl:input message="tns:SendHaloMgsWithForwardHttpPostIn" />
+      <wsdl:output message="tns:SendHaloMgsWithForwardHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <wsdl:input message="tns:UpdateOrderHttpPostIn" />
+      <wsdl:output message="tns:UpdateOrderHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <wsdl:input message="tns:GetOrderStatusHttpPostIn" />
+      <wsdl:output message="tns:GetOrderStatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <wsdl:input message="tns:GetEmpNameHttpPostIn" />
+      <wsdl:output message="tns:GetEmpNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfomation">
+      <wsdl:input message="tns:GetEmpInfomationHttpPostIn" />
+      <wsdl:output message="tns:GetEmpInfomationHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmp_Agent">
+      <wsdl:input message="tns:GetEmp_AgentHttpPostIn" />
+      <wsdl:output message="tns:GetEmp_AgentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpAgent">
+      <wsdl:input message="tns:GetEmpAgentHttpPostIn" />
+      <wsdl:output message="tns:GetEmpAgentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpLevel">
+      <wsdl:input message="tns:GetEmpLevelHttpPostIn" />
+      <wsdl:output message="tns:GetEmpLevelHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpManagers">
+      <wsdl:input message="tns:GetEmpManagersHttpPostIn" />
+      <wsdl:output message="tns:GetEmpManagersHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpMail">
+      <wsdl:input message="tns:GetEmpMailHttpPostIn" />
+      <wsdl:output message="tns:GetEmpMailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Select">
+      <wsdl:input message="tns:SelectHttpPostIn" />
+      <wsdl:output message="tns:SelectHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <wsdl:input message="tns:ExecuteHttpPostIn" />
+      <wsdl:output message="tns:ExecuteHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PostmanServiceSoap" type="tns:PostmanServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendHaloMgs">
+      <soap:operation soapAction="http://tempuri.org/SendHaloMgs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithScreenShot">
+      <soap:operation soapAction="http://tempuri.org/SendHaloMgsWithScreenShot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithFreeSpace">
+      <soap:operation soapAction="http://tempuri.org/SendHaloMgsWithFreeSpace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithForward">
+      <soap:operation soapAction="http://tempuri.org/SendHaloMgsWithForward" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <soap:operation soapAction="http://tempuri.org/UpdateOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <soap:operation soapAction="http://tempuri.org/GetOrderStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSignHistory">
+      <soap:operation soapAction="http://tempuri.org/InsertSignHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <soap:operation soapAction="http://tempuri.org/GetEmpName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfomation">
+      <soap:operation soapAction="http://tempuri.org/GetEmpInfomation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmp_Agent">
+      <soap:operation soapAction="http://tempuri.org/GetEmp_Agent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpAgent">
+      <soap:operation soapAction="http://tempuri.org/GetEmpAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpLevel">
+      <soap:operation soapAction="http://tempuri.org/GetEmpLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpManagers">
+      <soap:operation soapAction="http://tempuri.org/GetEmpManagers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpMail">
+      <soap:operation soapAction="http://tempuri.org/GetEmpMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select">
+      <soap:operation soapAction="http://tempuri.org/Select" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <soap:operation soapAction="http://tempuri.org/Execute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostmanServiceSoap12" type="tns:PostmanServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendHaloMgs">
+      <soap12:operation soapAction="http://tempuri.org/SendHaloMgs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithScreenShot">
+      <soap12:operation soapAction="http://tempuri.org/SendHaloMgsWithScreenShot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithFreeSpace">
+      <soap12:operation soapAction="http://tempuri.org/SendHaloMgsWithFreeSpace" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithForward">
+      <soap12:operation soapAction="http://tempuri.org/SendHaloMgsWithForward" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <soap12:operation soapAction="http://tempuri.org/UpdateOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetOrderStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSignHistory">
+      <soap12:operation soapAction="http://tempuri.org/InsertSignHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfomation">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpInfomation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmp_Agent">
+      <soap12:operation soapAction="http://tempuri.org/GetEmp_Agent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpAgent">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpLevel">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpManagers">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpManagers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpMail">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select">
+      <soap12:operation soapAction="http://tempuri.org/Select" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <soap12:operation soapAction="http://tempuri.org/Execute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostmanServiceHttpGet" type="tns:PostmanServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SendHaloMgs">
+      <http:operation location="/SendHaloMgs" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithScreenShot">
+      <http:operation location="/SendHaloMgsWithScreenShot" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithFreeSpace">
+      <http:operation location="/SendHaloMgsWithFreeSpace" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithForward">
+      <http:operation location="/SendHaloMgsWithForward" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <http:operation location="/UpdateOrder" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <http:operation location="/GetOrderStatus" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <http:operation location="/GetEmpName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfomation">
+      <http:operation location="/GetEmpInfomation" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmp_Agent">
+      <http:operation location="/GetEmp_Agent" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpAgent">
+      <http:operation location="/GetEmpAgent" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpLevel">
+      <http:operation location="/GetEmpLevel" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpManagers">
+      <http:operation location="/GetEmpManagers" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpMail">
+      <http:operation location="/GetEmpMail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select">
+      <http:operation location="/Select" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <http:operation location="/Execute" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PostmanServiceHttpPost" type="tns:PostmanServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SendHaloMgs">
+      <http:operation location="/SendHaloMgs" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithScreenShot">
+      <http:operation location="/SendHaloMgsWithScreenShot" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithFreeSpace">
+      <http:operation location="/SendHaloMgsWithFreeSpace" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendHaloMgsWithForward">
+      <http:operation location="/SendHaloMgsWithForward" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <http:operation location="/UpdateOrder" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <http:operation location="/GetOrderStatus" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <http:operation location="/GetEmpName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfomation">
+      <http:operation location="/GetEmpInfomation" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmp_Agent">
+      <http:operation location="/GetEmp_Agent" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpAgent">
+      <http:operation location="/GetEmpAgent" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpLevel">
+      <http:operation location="/GetEmpLevel" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpManagers">
+      <http:operation location="/GetEmpManagers" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpMail">
+      <http:operation location="/GetEmpMail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select">
+      <http:operation location="/Select" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute">
+      <http:operation location="/Execute" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PostmanService">
+    <wsdl:port name="PostmanServiceSoap" binding="tns:PostmanServiceSoap">
+      <soap:address location="http://10.224.69.100:8080/postman/postmanservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostmanServiceSoap12" binding="tns:PostmanServiceSoap12">
+      <soap12:address location="http://10.224.69.100:8080/postman/postmanservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostmanServiceHttpGet" binding="tns:PostmanServiceHttpGet">
+      <http:address location="http://10.224.69.100:8080/postman/postmanservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PostmanServiceHttpPost" binding="tns:PostmanServiceHttpPost">
+      <http:address location="http://10.224.69.100:8080/postman/postmanservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

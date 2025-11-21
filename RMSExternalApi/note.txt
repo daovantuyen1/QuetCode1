@@ -1,0 +1,18 @@
+
+Cơ chế chống virus khi upload file lên IIS:
+
+B1. Thiết lập folder lưu trữ file temp của IIS cho web của bạn :
+ vd: Thiết lập trong web.config:
+    <compilation  tempDirectory="C:\Temp\TEST\tempfolder" />
+B2. Sau khi thiết lập tempDirectory="C:\Temp\TEST\tempfolder"
+   -> ta truy cập folder C:\Temp\TEST\tempfolder -> chuột phải vào tên folder/Property/Security/Advanced 
+     => rồi add IIS user hiện tại chỉ có quyền Read/write cho folder này (thiết lập cả Allow và Deny).
+
+B3. trong các Action upload file , thiết lập cơ chế như hàm await HandleBlockUploadMutilFilesForPdf();
+   -> thiết lập quyền cho  folder TEMP_FOLDER_FOR_FILE_IIS ( IIS user chỉ có quyền read/write)
+B4. sau khi file upload dk đẩy đến folder đích TEMP_CV_FOLDER,
+ => thiết lập folder TEMP_CV_FOLDER   ( IIS user chỉ có quyền read/write)
+B5. Trong chương trình console bên ngoài:
+  Sẽ kiểm tra từng file trong folder TEMP_CV_FOLDER  xem có virus ko
+  -> nếu ko -> đẩy sang server file
+  -> nếu có=> xóa file. 

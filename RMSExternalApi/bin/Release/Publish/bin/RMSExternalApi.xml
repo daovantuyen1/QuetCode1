@@ -1,0 +1,2970 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RMSExternalApi</name>
+    </assembly>
+    <members>
+        <member name="M:RMSExternalApi.Businesses.RMSAccountBusiness.SaveOTP(System.String,System.String)">
+            <summary>
+            Save temp OTP when login  
+            </summary>
+            <param name="key"></param>
+            <param name="OTP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSAccountBusiness.AddRLoginSession(System.String,System.String)">
+            <summary>
+            Save jwt token to db to use for check login/logout
+            </summary>
+            <param name="token"></param>
+            <param name="acc"></param>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSConfigDataBusiness.GetEducationLevelLs">
+            <summary>
+            Get eduction level list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSConfigDataBusiness.GetFactoryLs">
+            <summary>
+            Get factory list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSConfigDataBusiness.GetGenderLs">
+            <summary>
+            Get gender list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetResultHistoryOfTPID(System.String)">
+            <summary>
+            Get result history of TPID of External job
+            </summary>
+            <param name="TPID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetAmProcessLsOfTPID(System.String)">
+            <summary>
+            Get list interview history result of external job
+            </summary>
+            <param name="TPID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetStatusOfImNoRefTPID(System.String)">
+            <summary>
+            Get trang thai ma dau don phong van tuong ung voi ma don nhan tai TPID
+            </summary>
+            <param name="TPID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetTbTpTalentPool(System.String)">
+            <summary>
+            Get Infor Cv for external job
+            </summary>
+            <param name="tpID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetTbTpWorkingLife(System.String)">
+            <summary>
+            Get job experience
+            </summary>
+            <param name="tpID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetTbTpEduction(System.String)">
+            <summary>
+            Get education process
+            </summary>
+            <param name="tpID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetTbTpProjectExperience(System.String)">
+            <summary>
+            Get project experience
+            </summary>
+            <param name="tpID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetFileAttachInforOfExternalJobMovedToServerFile(System.String)">
+            <summary>
+            Get thong tin file attach cua external job , ma file do da move sang server file
+            </summary>
+            <param name="TPID"></param>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.UpdateFileTransferedToServerFileForExternalJob(System.String,System.String,System.String)">
+            <summary>
+            Update file transfered to  Server file for External job success
+            </summary>
+            <param name="TPID"></param>
+            <param name="FileId"></param>
+            <param name="jobMail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.DeleteFileAttachInforOfExternalJobMovedToServerFile(System.String,System.String)">
+            <summary>
+            Delete infor of file attached moved to server file for External job 
+            </summary>
+            <param name="TPID"></param>
+            <param name="FileID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetCVExternalJobLsOfJobMail(System.String)">
+            <summary>
+            Get list cv job for external job applied of job mail
+            </summary>
+            <param name="jobMail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVExternalJobBusiness.UpdateStatusOfCVExternalJobToSubmit(System.String,System.String)">
+            <summary>
+            Update status of TPID of external job into sign process
+            </summary>
+            <param name="TPID"></param>
+            <param name="jobMail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.GetImStatusInTextDesc(System.String)">
+            <summary>
+            tu ma trang thai don phong van sinh vien (  tb_cr_im_interview: IM_STATUS  ) 
+            chuyen doi ma so do thanh text mo ta
+            </summary>
+            <param name="imStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.GetImInterviewProcess(System.String)">
+            <summary>
+            Get Interview History Result of TPID
+            </summary>
+            <param name="TPID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.GetStatusOfImNoRefTPID(System.String)">
+            <summary>
+            Get trang thai cua Imno tuong ung voi TPID
+            </summary>
+            <param name="TPID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.GetTbCrTpTalentPool(System.String)">
+            <summary>
+            Get Cv infor of School job
+            </summary>
+            <param name="tpID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.AddCVForSchoolJob(RMSExternalApi.Models.RMS.CVForSchoolJob,System.String@)">
+            <summary>
+            Add cv job for school job
+            </summary>
+            <param name="cv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.UpdateCVForSchoolJob(RMSExternalApi.Models.RMS.CVForSchoolJob)">
+            <summary>
+            Update cv job for school job
+            </summary>
+            <param name="cv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.DeleteCVForSchoolJob(System.String)">
+            <summary>
+            Delete cv job for School job
+            </summary>
+            <param name="tpID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.GetCVForSchoolJob(System.String)">
+            <summary>
+            Get detail cv job for school job
+            </summary>
+            <param name="tpID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.GetFileAttachInforOfSchoolJobMovedToServerFile(System.String)">
+            <summary>
+            Get thong tin file attach cua school job , ma file do da move sang server file
+            </summary>
+            <param name="TPID"></param>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVSchoolJobBusiness.GetCVSchoolJobLsOfJobMail(System.String)">
+            <summary>
+            Get list cv job for school job applied of job mail
+            </summary>
+            <param name="jobMail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSCVTemplateBusiness.UpdateTempFileAttachInforToCVTemplate(System.String,System.String,System.String)">
+            <summary>
+            Update file attach to Cv template  (file saved to temp foler)
+            </summary>
+            <param name="fileId"></param>
+            <param name="fileName"></param>
+            <param name="mail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSEmployeeBusiness.AddEmployeeRegisterInterview(RMSExternalApi.Models.RMS.EmployeeRegister,System.String,System.String)">
+            <summary>
+            Add new emp register to interview worker
+            </summary>
+            <param name="employee"></param>
+            <param name="jobMail"></param>
+            <param name="jobPhone"></param>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSEmployeeBusiness.UpdateEmployeeRegisterInterview(RMSExternalApi.Models.RMS.EmployeeRegister,System.String)">
+            <summary>
+            update inform emp register to interview worker
+            </summary>
+            <param name="employee"></param>
+            <param name="jobMail"></param>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSEmployeeBusiness.getMenuNodeTree(System.Collections.Generic.List{RMSExternalApi.Models.RMS.NodeTree})">
+            <summary>
+            递归查询子节点数据
+            </summary>
+            <param name="Nodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSEmployeeBusiness.getNodeTreeBySysNameAndFatherNode(System.String,System.String)">
+            <summary>
+            根據系統名稱和父節點名稱查詢子節點詳情
+            </summary>
+            <param name="fatherNode">系統名稱</param>
+            <param name="sysName">父節點名稱</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSFileBusiness.DeleteFileByFileID(System.String)">
+            <summary>
+            Delete file on server file 
+            </summary>
+            <param name="fileId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSFileBusiness.GetFileInfo(System.String)">
+            <summary>
+            Get infor of file on Server file
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSFileBusiness.UpdFileStatus(System.String)">
+            <summary>
+            Update status sended file to server file success
+            </summary>
+            <param name="fileGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Businesses.RMSMailBusiness.SendMailOTPCodeToUser(System.String,System.String)">
+            <summary>
+            Send mail OTP to user
+            </summary>
+            <param name="OTP"></param>
+            <param name="mailTo"></param>
+        </member>
+        <member name="T:RMSExternalApi.Commons.AddFileParamTypes">
+            <summary>
+            Them tinh nang hien thi control upload file tren swagger UI phien ban cu
+            </summary>
+        </member>
+        <member name="F:RMSExternalApi.Commons.Constant.TEMP_CV_FOLDER">
+            <summary>
+            Duong dan temp folder de luu file CV pdf cua cac job cua user
+            </summary>
+        </member>
+        <member name="F:RMSExternalApi.Commons.Constant.TEMP_FOLDER_FOR_FILE_IIS">
+            <summary>
+            Thư mục tạm thời lưu file upload lên IIS (ko dùng thư mục temp mặc định của IIS- ko control dk vấn đề virus file )
+            </summary>
+        </member>
+        <member name="F:RMSExternalApi.Commons.Constant.FOLDER_CV_TEMPLATE">
+            <summary>
+            Folder luu file dinh kem vao CV template
+            </summary>
+        </member>
+        <member name="F:RMSExternalApi.Commons.Constant.FOLDER_CV_TEMPLATE_TEMP">
+            <summary>
+            file attach to cv template se dk luu tam thoi trong foler nay, sau do se quet virus file do, neu Ok se chuyen no sang folder FOLDER_CV_TEMPLATE
+            </summary>
+        </member>
+        <member name="T:RMSExternalApi.Commons.CustomAuthenApiAttribute">
+            <summary>
+            Custom authen for web api
+            </summary>
+        </member>
+        <member name="T:RMSExternalApi.Commons.IpPrefixedStreamProvider">
+            <summary>
+            Class nay dung de ghi de ten file luu vao thu muc tam IIS ( TEMP_FOLDER_FOR_FILE_IIS ) , ten file se co tien to la IP v4
+            </summary>
+        </member>
+        <member name="M:RMSExternalApi.Commons.LoginSSOs.LoginSSO(System.String)">
+            <summary>
+            sau khi dang nhap sso tren trang lh-account thanh cong se redirect den action nay cung voi parmam code
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="P:RMSExternalApi.Commons.OauthUser.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Commons.OauthUser.username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Commons.OauthUser.org">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RMSExternalApi.Commons.Util.CheckDtValid(System.Data.DataTable)">
+            <summary>
+            Check DataTable is Valid?
+            </summary>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Commons.Util.IsValidEmail(System.String)">
+            <summary>
+            Kiểm tra xem một chuỗi có phải là địa chỉ email hợp lệ hay không.
+            </summary>
+            <param name="emailAddress">Chuỗi địa chỉ email cần kiểm tra.</param>
+            <returns>True nếu chuỗi là địa chỉ email hợp lệ, ngược lại là False.</returns>
+        </member>
+        <member name="M:RMSExternalApi.Commons.Util.ConvertDaysToApproximateYears(System.Int32)">
+            <summary>
+            Convert  total Days to Year interger
+            </summary>
+            <param name="totalDays"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RMSExternalApi.Controllers.CustomTokenValidAttribute">
+            <summary>
+            Check Token Send from request is vaild.
+            </summary>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.CheckLoginValid">
+            <summary>
+            Check jwt authen valid  ➔ if valid  ➔ return user infor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.LoginWithEmail(RMSExternalApi.Models.RMS.Requests.LoginWithEmail)">
+            <summary>
+            Check email valid  ➔ send OTP to email
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.LoginWithPhone(RMSExternalApi.Models.RMS.Requests.LoginWithPhone)">
+            <summary>
+            Check phone valid  ➔ send OTP to phone
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.ConfirmLoginOTPForEmail(RMSExternalApi.Models.RMS.Requests.ConfirmOTPForEmail)">
+            <summary>
+            Send OTP and Email and confirm it valid  ➔ if valid return JWT token for authen 
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.ConfirmLoginOTPForPhone(RMSExternalApi.Models.RMS.Requests.ConfirmOTPForPhone)">
+            <summary>
+            Send OTP and Phone and confirm it valid  ➔ if valid return JWT token for authen 
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.UpdateEmailForAccount(RMSExternalApi.Models.RMS.Requests.UpdateEmailForAccount)">
+            <summary>
+            Update Email for your account , This method Need confirm OTP  ,Each Email only allows link only one times
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.UpdatePhoneForAccount(RMSExternalApi.Models.RMS.Requests.UpdatePhoneForAccount)">
+            <summary>
+            Update phone for your account, This method Need confirm OTP  ,Each phone only allows link only one times
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.UpdateNameForAccount(RMSExternalApi.Models.RMS.Requests.UpdateAccount)">
+            <summary>
+            Update name  for your account 
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAccountController.GetCurrentOTP(System.String)">
+            <summary>
+            Get current OTP of mail/phone (Only use for dev process)
+            </summary>
+            <param name="key">email/phone</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSAPIBaseController.HandleBlockUploadMutilFilesForPdf">
+            <summary>
+             Xu ly chi cho phep upload 1 file trong moi request , va chu dong luu file tam
+             thoi vao thu muc rieng ( ko dung thu muc temp cua IIS) de quan ly va control van de viruss
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetHeaderPoster(System.String,System.String,System.String)">
+            <summary>
+            Api docnum :1 , Get list image of slide show on DMZ public web,
+            Example : LanguageId = VN , KeyPageHeader = 社招海报 , Call= DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="KeyPageHeader">文件组ID:/位置:公司简介.首页海报/社招海报/校招海报/技术工海报/公益招聘海报/联系我们海报</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetCompanyDevRoadMap(System.String,System.String)">
+            <summary>
+            Api docnum: 3,  Get company Development RoadMap,
+            Example: LanguageId =VN ,Call = DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetCompanyIntroduction(System.String,System.String)">
+            <summary>
+            Api docnum: 2, Get Company Introduction,
+            Example : LanguageId = VN , Call = DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetAboutUs1(System.String,System.String)">
+            <summary>
+            Api docnum :4 ,Get about us 1 ,
+            Example:  LanguageId= VN , Call= DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetAboutUs2(System.String,System.String)">
+            <summary>
+            Api docnum :5 ,Get about us 2,
+            Example: LanguageId = VN, Call =DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetContactInfor(System.String)">
+            <summary>
+             Api docnum :6, Get contact information ,
+            Example :LanguageId= VN
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetCountryLsOfWorkerRecruitment(System.String,System.String)">
+            <summary>
+            Api docnum: 7, GetCountry Ls Of Worker Recruitment ,
+            Example : LanguageId = VN , Call = DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetContentFactoryOfWorkerRecruitment(System.String,System.String,System.String)">
+            <summary>
+            Api docnum: 8,  Get Content Factory Of Worker Recruitment,
+            Example : LanguageId = VN , Call= DMZ , Country = Việt Nam
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <param name="Country">Việt Nam</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetContentSlider2WelfareRecruitment(System.String,System.String)">
+            <summary>
+            Api docnum: 9,  Get Content Slider2 Welfare Recruitment,
+            Example : LanguageId=  VN, Call = DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetContent1WelfareRecruitment(System.String,System.String)">
+            <summary>
+             Api docnum: 10, GetContent 1 Welfare Recruitment,
+            Example : LanguageId = VN, Call = DMZ
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetCountryLsOfSeekRecruitment(System.String,System.String,System.String)">
+            <summary>
+            Api docnum: 11, Get Country Ls Of Seek Recruitment ,
+            Example: RecruitmentName= 社会招募 , LanguageId = VN , Call = DMZ
+            </summary>
+            <param name="RecruitmentName">社会招募/校园招聘</param>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetJobCatergoryLsOfSeekRecruitment(System.String,System.String,System.String,System.String)">
+            <summary>
+            Api docnum: 12, Get Job Catergory Ls Of Seek Recruitment,
+            Example : RecruitmentName= 社会招募 , LanguageId = VN , CountryId = 2024051611195900451189 , Call = DMZ
+            </summary>
+            <param name="RecruitmentName">社会招募/校园招聘</param>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="CountryId">Example:2024051611195900451189</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetExperienceLsOfSeekRecruitment(System.String,System.String,System.String,System.String)">
+            <summary>
+             Api docnum: 13, Get Experience Ls Of Seek Recruitment ,
+            Example : RecruitmentName = 社会招募 , LanguageId = VN , CountryId = 2024051611195900451189  ,Call= DMZ
+            </summary>
+            <param name="RecruitmentName">社会招募/校园招聘</param>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="CountryId">Example:2024051611195900451189</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetEducationLsOfSeekRecruitment(System.String,System.String,System.String,System.String)">
+            <summary>
+            Api docnum: 14, Get Education Ls Of Seek Recruitment ,
+            Example : RecruitmentName = 社会招募 ,LanguageId =  VN , CountryId = 2024051611195900451189 , Call = DMZ
+            </summary>
+            <param name="RecruitmentName">社会招募/校园招聘</param>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="CountryId">Example:2024051611195900451189</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetHotJobLs(System.String,System.String,System.String)">
+            <summary>
+            Api docnum: 15, Get Hot Job Ls,
+            Example : RecruitmentName = 社会招募 , LanguageId =  VN , Call = DMZ
+            </summary>
+            <param name="RecruitmentName">社会招募/校园招聘</param>
+            <param name="LanguageId">VN/EN/CN</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetDetailJob(System.String,System.String,System.String)">
+            <summary>
+            Api docnum: 16,  Get Detail Job,
+            Example : JobID = 2024051810341600451273 , Call =DMZ 
+            </summary>
+            <param name="JobID">Ex: 2024051810341600451273</param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <param name="LanguageId">CN/EN/VN</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetJobLsOfSeekRecruitment(RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentReq)">
+             <summary>
+              Api docnum: 17, Get Job Ls Of Seek Recruitment >>
+             Params: RecruitmentName:社会招募/校园招聘 , 
+             LanguageId: VN/EN/CN,
+             Call: DMZ/INTERNAL,
+             page:Order of page to display: example page = 1 , page= 2 ,
+             pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10 ,
+             CountryID: example:2024051611195900451189 ,
+            Exampple:
+             {  RecruitmentName: '社会招募'  , LanguageId :'VN' , Call:'DMZ', page:1, pageSize:10, CountryID:'2024051611195900451189',Position :'',JobCategory :'', Experience :'', Education :''   }
+             </summary>
+             <param name="request"></param>
+             <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetJobLsOfSeekRecruitmentNewest(RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentNewestReq)">
+            <summary>
+             Api docnum: 28, Get Job Ls Of Seek Recruitment newest ( top 5) 
+             Params: RecruitmentName:社会招募/校园招聘 ,
+             LanguageId: VN/EN/CN,
+             Call: DMZ/INTERNAL,
+             ,Count: Quantity jobs need to show: ex: Count=5,Count=10
+             Example: {  RecruitmentName:'社会招募',LanguageId:'VN', Call:'DMZ', Count:5 }
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetCompanyPosterAppLs(RMSExternalApi.Models.RMS.Requests.CompanyPosterAppReq)">
+             <summary>
+            Api docnum: 18, Get Company Poster Application List 
+             Params: applyNo :Application docNo  . example: 20240516140825004511 ,
+             applyEmp:EmpNo of user created application .example :V1030398 ,
+             signEmp:next Signer empNo . example :V1021214 ,
+             page: Order of page to display: example page = 1 , page= 2  ,
+             pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10
+             Example : {  applyNo:'20240516140825004511', applyEmp:'',signEmp:'',page:1, pageSize:10}
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetCompanyProfileAppLs(RMSExternalApi.Models.RMS.Requests.CompanyProfileAppReq)">
+            <summary>
+            Api docnum: 19, Get Company Profile Application List
+            Params: applyNo :Application docNo  . example: 202405170915400 ,
+            applyEmp:EmpNo of user created application .example :V1030398 ,
+            signEmp:next Signer empNo . example :V1021214 ,
+            page: Order of page to display: example page = 1 , page= 2  ,
+            pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10
+            Example : {  applyNo:'202405170915400', applyEmp:'',signEmp:'',page:1, pageSize:10}
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetCompanyProgressAppLs(RMSExternalApi.Models.RMS.Requests.CompanyProfileAppReq)">
+            <summary>
+            Api docnum: 20, Get Company Progress Application List
+            Params: applyNo :Application docNo  . example: 202405161630210045122 ,
+            applyEmp:EmpNo of user created application .example :V1030398 ,
+            signEmp:next Signer empNo . example :V1021214 ,
+            page: Order of page to display: example page = 1 , page= 2  ,
+            pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10
+            Example : {  applyNo:'202405161630210045122', applyEmp:'',signEmp:'',page:1, pageSize:10}
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetOurBusinessAppLs(RMSExternalApi.Models.RMS.Requests.OurBusinessAppReq)">
+            <summary>
+            Api docnum: 21, Get Our Business Application List
+            Params: applyNo :Application docNo  . example: 202405171029310045 ,
+            applyEmp:EmpNo of user created application .example :V1030398 ,
+            signEmp:next Signer empNo . example :V1021214 ,
+            page: Order of page to display: example page = 1 , page= 2  ,
+            pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10
+            Example : {  applyNo:'202405171029310045', applyEmp:'',signEmp:'',page:1, pageSize:10}
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetSkilledWorkerAppLs(RMSExternalApi.Models.RMS.Requests.SkilledWorkerAppReq)">
+            <summary>
+            Api docnum: 22, Get Skilled Worker Application Lisst
+            Params: applyNo :Application docNo  . example: 2024051714491600251 ,
+            applyEmp:EmpNo of user created application .example :V1030398 ,
+            signEmp:next Signer empNo . example :V1021214 ,
+            page: Order of page to display: example page = 1 , page= 2  ,
+            pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10
+            Example : {  applyNo:'2024051714491600251', applyEmp:'',signEmp:'',page:1, pageSize:10}
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetPublicWelfareRecruitmentAppLs(RMSExternalApi.Models.RMS.Requests.SkilledWorkerAppReq)">
+            <summary>
+            Api docnum: 23, Get Public Welfare Recruitment App Ls
+            Params: applyNo :Application docNo  . example: 2024051808000451263 ,
+            applyEmp:EmpNo of user created application .example :V1030398 ,
+            signEmp:next Signer empNo . example :V1021214 ,
+            page: Order of page to display: example page = 1 , page= 2  ,
+            pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10
+            Example : {  applyNo:'2024051808000451263', applyEmp:'',signEmp:'',page:1, pageSize:10}
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetPublicWelfareAppLs(RMSExternalApi.Models.RMS.Requests.PublicWelfareAppReq)">
+            <summary>
+            Api docnum: 24, Get Public Welfare Application list
+            Params: applyNo :Application docNo  . example: 20240518091651268 ,
+            applyEmp:EmpNo of user created application .example :V1030398 ,
+            signEmp:next Signer empNo . example :V1021214 ,
+            page: Order of page to display: example page = 1 , page= 2  ,
+            pageSize:Total qty of rows will show on a page : example :  pageSize=5 ,pageSize=10
+            Example : {  applyNo:'20240518091651268', applyEmp:'',signEmp:'',page:1, pageSize:10}
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetContactWindow(System.String)">
+            <summary>
+            Api docnum: 25, Get Contact Window list
+            </summary>
+            <param name="LanguageId">VN/EN/CN</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.UploadFile(System.String)">
+            <summary> 
+            Api docnum: 26, Upload file 
+            Example Request Body :    1. FormData: your data file need upload
+                                 :    2. Query param :createEmp : Employee no upload file
+            </summary>
+            <param name="createEmp">Employee no upload file</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSApiController.GetFileInfor(System.String,System.String)">
+            <summary>
+            Api docnum: 27, Get File information, Example : FileId =  2024061910171600451585 , Call =DMZ
+            </summary>
+            <param name="FileId">FileId, example :FileId =  2024061910171600451585 </param>
+            <param name="Call">DMZ/INTERNAL</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSConfigDataController.GetEducationLevelLs">
+            <summary>
+            Get eduction level list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSConfigDataController.GetFactoryLs">
+            <summary>
+            Get factory list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSConfigDataController.GetGenderLs">
+            <summary>
+            Get gender list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.GetCVExternalJobLsOfJobMail">
+            <summary>
+            Get CV job for External job List of current account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.GetCVForExternalJob(System.String)">
+            <summary>
+            Get Cv job information for External job
+            </summary>
+            <param name="tpID">Doc no</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.DeleteCVForExternalJob(System.String)">
+            <summary>
+            Delete CV infor for External job
+            </summary>
+            <param name="tpID">Doc no</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.ModifyCVForExternalJob(RMSExternalApi.Models.RMS.CVForExternalJob)">
+            <summary>
+            Modify CV for external job 
+            </summary>
+            <param name="cVForExternalJob"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.UploadFileCVForExternalJob1">
+             <summary>
+            (Use Postman for debug)  Upload file CV pdf for External job , format payload: var form= new FormData();  form.append("TPID","Your doc No") ;form.append("file",file[0])
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.UploadFileCVForExternalJob">
+            <summary>
+            Upload file CV pdf for External job , format payload: var form= new FormData();  form.append("TPID","Your doc No") ;form.append("file",file[0])
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.DeleteFileCVForExternalJob(System.String)">
+            <summary>
+            Delete file Cv for External Job
+            </summary>
+            <param name="TPID">Doc no</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForExternalJobController.SubmitExternalJob(System.String)">
+            <summary>
+            Submit External job of TPID (move status from Draft to Submit)
+            </summary>
+            <param name="TPID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForSchoolJobController.GetCVSchoolJobLsOfJobMail">
+            <summary>
+            Get CV job for School job List of current account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForSchoolJobController.GetCVForSchoolJob(System.String)">
+            <summary>
+            Get Cv job information for School job
+            </summary>
+            <param name="tpID">Doc No</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForSchoolJobController.DeleteCVForSchoolJob(System.String)">
+            <summary>
+            Delete CV infor for School job
+            </summary>
+            <param name="tpID">Doc no of job applied</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForSchoolJobController.ModifyCVForSchoolJob(RMSExternalApi.Models.RMS.CVForSchoolJob)">
+            <summary>
+            Modify CV for School job 
+            </summary>
+            <param name="cVForSchool"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForSchoolJobController.UploadFileCVForSchoolJob1">
+             <summary>
+            (Use Postman for debug) Upload file CV pdf for School job , format payload: var form= new FormData();  form.append("TPID","Your doc No") ;form.append("file",file[0])
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForSchoolJobController.UploadFileCVForSchoolJob">
+            <summary>
+            Upload file CV pdf for School job , format payload: var form= new FormData();  form.append("TPID","Your doc No") ;form.append("file",file[0])
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVForSchoolJobController.DeleteFileCVForSchoolJob(System.String)">
+            <summary>
+            Delete file Cv for School Job
+            </summary>
+            <param name="TPID">Doc no</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSCVTotalController.GetCountTotalJobRegister">
+            <summary>
+             count total job your registered
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSEmployeeController.EmpRegisterInterviewWorker(RMSExternalApi.Models.RMS.EmployeeRegister)">
+            <summary>
+            Employee register to interview worker
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSEmployeeController.GetEmpRegisterInterviewLS">
+            <summary>
+            Get list register to interview worker of current user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSFileController.DownloadFileFromUrl(System.String,System.String)">
+            <summary>
+            Get file from an url and return that file to client 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSFileController.DownloadFileFromLocalFolder(System.String,System.String)">
+            <summary>
+            Get file from a local folder and return that file to client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSFileController.DownloadFile(System.String)">
+            <summary>
+            Download file (No use swagger UI for test, plz use Postman/axios..)
+            </summary>
+            <param name="fileID">id of file</param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSProfileController.GetProfile">
+            <summary>
+            Get data of CV Template
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSProfileController.ModifyProfile(RMSExternalApi.Models.RMS.CVTemplate)">
+            <summary>
+            Modify CV template
+            </summary>
+            <param name="cVTemplate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RMSExternalApi.Controllers.RMSProfileController.UploadFileAttachToProfile">
+             <summary>
+            (Use Postman for debug) Upload file attach to Cv template , format payload :var fileName= btoa("your file name"); /* fileName in base64 format */   var form=new FormData(); form.append("fileName",fileName)  ; form.append("file",file[0]);
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:RMSExternalApi.DTO.RMS.IE_R_LOGIN_OTP.F_KEY">
+            <summary>
+            mail or phone
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.DTO.RMS.IE_R_LOGIN_OTP.F_OTP">
+            <summary>
+            OTP code
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.DTO.RMS.IE_R_LOGIN_OTP.F_SYSDATE">
+            <summary>
+            Create date
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.DTO.RMS.IE_R_LOGIN_OTP.F_IP">
+            <summary>
+            CLient IP
+            </summary>
+        </member>
+        <member name="T:RMSExternalApi.DTO.RMS.IE_R_LOGIN_SESSION">
+            <summary>
+            Save jwt login of user, use for check login, logout
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.DTO.RMS.TB_TP_TALENTPOOL.RESULT">
+            <summary>
+            Trang thai don ky trong luu trinh cua HR
+            </summary>
+        </member>
+        <member name="T:RMSExternalApi.DTO.TB_IM_INTERVIEW_RESULT_HISTORY">
+            <summary>
+            History of RESULT of table TB_IM_INTERVIEW
+            </summary>
+        </member>
+        <member name="T:RMSExternalApi.Models.RMS.AmProcess">
+            <summary>
+            interview history result of External job
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVJobBaseModel.tpStatusId">
+            <summary>
+            Status of TPID 
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVJobBaseModel.status">
+            <summary>
+            Status of doc no follow HR sign process : Deleted/Draff/Submited and waiting/ etc ..  (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVJobBaseModel.isAllowEdit">
+            <summary>
+            Allow edit your CV job ? Flag to check allow show Edit CV job (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVExternalJobBaseModel.amProcesses">
+            <summary>
+            List interview history result of External job
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVExternalJobBaseModel.resultHistories">
+            <summary>
+            List result history of External job
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVSchoolJobBaseModel.schoolImProcesses">
+            <summary>
+            List interview history result of school job
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.mail">
+            <summary>
+            (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.mobile">
+            <summary>
+             (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.name">
+            <summary>
+             (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.gender">
+            <summary>
+             M: male, F:Female  (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.birthday">
+            <summary>
+             yyyy/mm/dd  (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.citizenId">
+            <summary>
+             (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.married">
+            <summary>
+            Y/N
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.address">
+            <summary>
+             (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.tpStatusId">
+            <summary>
+            status of TPID  (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.status">
+            <summary>
+             Status Of DocNo refer to HR sign process  : Deleted/Draff/Submited and waiting/ etc...  (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.createDate">
+            <summary>
+            (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.updateDate">
+            <summary>
+            (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.fileID">
+            <summary> 
+            file id of attach file  : 20251212445545.pdf / 20251212445546 (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVTemplate.fileName">
+            <summary>
+            full name of file  (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.CVDetail">
+            <summary>
+            No use this field
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.TPID">
+            <summary>
+            DocNo
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.jobMail">
+            <summary>
+            Mail of user (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.jobID">
+            <summary>
+            Job id, which user applied
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.jobName">
+            <summary>
+            Name of job , which user applied
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.isFileCVAttachedTransfered">
+            <summary>
+            File Cv attached was tranfered to internal server ? (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.skills">
+            <summary>
+            professional skill 
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.amProcesses">
+            <summary>
+            List interview history result of external job (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.resultHistories">
+            <summary>
+            List Result history  of external job (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForExternalJob.isAllowEdit">
+            <summary>
+            Allow edit your CV job ? Flag to check allow show Edit CV job (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.CVDetail">
+            <summary>
+            No use this field
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.TPID">
+            <summary>
+            DocNo
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.jobMail">
+            <summary>
+            Mail of user  (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.jobID">
+            <summary>
+            Job id, which user applied (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.jobName">
+            <summary>
+            Name of job , which user applied (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.name">
+            <summary>
+            Your name (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.gender">
+            <summary>
+            M/F (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.ethnic">
+             <summary>
+            ethnic (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.mobile">
+             <summary>
+            mobile (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.school">
+             <summary>
+            school name (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.qualification">
+             <summary>
+            qualification :University/college.. etc (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.citizenId">
+             <summary>
+            citizenID (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.birthday">
+             <summary>
+            Your birthday:yyyy/mm/dd (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.major">
+             <summary>
+            major (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.hometown">
+             <summary>
+            your address (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.email">
+             <summary>
+            email (Required)
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.positionWish">
+             <summary>
+            Detail position Wish
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.foreignLanguage">
+             <summary>
+            You know which Foreign Language  
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.foreignLanguageLevel">
+             <summary>
+            Your Foreign Language Level  Score : From  0 to 100  
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.createDate">
+            <summary>
+            (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.updateDate">
+            <summary>
+             (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.tpStatus">
+            <summary>
+            Status of TPID (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.status">
+            <summary>
+             Status Of DocNo refer to HR sign process (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.fileID">
+            <summary>
+             file id of attach file
+            </summary>
+        </member>
+        <member name="F:RMSExternalApi.Models.RMS.CVForSchoolJob.schoolImProcesses">
+            <summary>
+            List interview history result of school job (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.CVForSchoolJob.isAllowEdit">
+            <summary>
+            Allow edit your CV job ? Flag to check allow show Edit CV job (Readonly)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.ProjectExperience.startTime">
+            <summary>
+            (Required) yyyy-mm
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.ProjectExperience.endTime">
+             <summary>
+            (Required) yyyy-mm
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.ProjectExperience.name">
+            <summary>
+            (Required)name of company or project
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.ProjectExperience.description">
+            <summary>
+            (Required) Description 
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.JobExperience.startTime">
+             <summary>
+            (Required)  yyyy-mm
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.JobExperience.endTime">
+            <summary>
+            (Required) yyyy-mm
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.JobExperience.company">
+             <summary>
+            (Required) Name of company
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.JobExperience.position">
+            <summary>
+            (Required) position
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.JobExperience.description">
+             <summary>
+            (Required) Description of job
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Education.startTime">
+             <summary>
+            (Required)  yyyy-mm
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Education.endTime">
+             <summary>
+            (Required) yyyy-mm
+             </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Education.school">
+            <summary>
+            (Required) Name of school
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Education.major">
+            <summary>
+            Major
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Education.eduQualify">
+            <summary>
+            (Required) EDUCATIONAL QUALIFICATIONS
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.EmployeeRegister.name">
+            <summary>
+            your name
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.EmployeeRegister.mobile">
+            <summary>
+             your phone number
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.EmployeeRegister.factory">
+            <summary>
+            Factory , that you want to register to do work
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.EmployeeRegister.interviewDate">
+            <summary>
+            Interview date: yyyy/mm/dd
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.MailDataView.KeyRowIDMail">
+            <summary>
+            Key khóa mail để xóa mail cũ: giống mail gửi OTP của BHXH
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.NodeTree.ROW_ID">
+            <summary>
+            菜单节点的映射类
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.ElTableReq.page">
+            <summary>
+            Order of page to display: example page 1 , page 2
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.ElTableReq.pageSize">
+            <summary>
+            Total qty of rows will show on a page : example :  pageSize=10 ,pageSize=20
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentReq.RecruitmentName">
+            <summary>
+            社会招募/校园招聘
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentReq.LanguageId">
+            <summary>
+            VN/EN/CN
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentReq.Call">
+            <summary>
+            DMZ/INTERNAL
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentReq.CountryID">
+            <summary>
+            Example:2024051611195900451189
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentNewestReq.LanguageId">
+            <summary>
+             VN/EN/CN
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentNewestReq.RecruitmentName">
+            <summary>
+             社会招募/校园招聘
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentNewestReq.Call">
+            <summary>
+            DMZ/INTERNAL
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.JobOfSeekRecruitmentNewestReq.Count">
+            <summary>
+            Quantity jobs need to show
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.LoginWithEmail.email">
+            <summary>
+            Email for login with email  (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.LoginWithPhone.phone">
+            <summary>
+            phone for login with phone  (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.ConfirmOTPForEmail.email">
+            <summary>
+            Email for login with email (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.ConfirmOTPForEmail.OTP">
+            <summary>
+            OTP for login with email (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.ConfirmOTPForPhone.phone">
+            <summary>
+            Phone for login with Phone (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.ConfirmOTPForPhone.OTP">
+            <summary>
+            OTP for login with Phone (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.UpdateAccount.name">
+            <summary>
+            (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.UpdateEmailForAccount.mail">
+            <summary>
+            (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.UpdateEmailForAccount.OTP">
+            <summary>
+            (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.UpdatePhoneForAccount.phone">
+            <summary>
+            (Required)
+            </summary>
+        </member>
+        <member name="P:RMSExternalApi.Models.RMS.Requests.UpdatePhoneForAccount.OTP">
+            <summary>
+            (Required)
+            </summary>
+        </member>
+        <member name="T:RMSExternalApi.Models.RMS.ResultHistory">
+            <summary>
+            Result history of external job
+            </summary>
+        </member>
+        <member name="T:RMSExternalApi.Models.RMS.SchoolImProcess">
+             <summary>
+            Interview history result of School job
+             </summary>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ElistQuery">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ChangeDataCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ExtDataCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_InfoDataCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearchCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserNameCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgent4SiteCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ExploreEmployeeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByDepartmentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByNotesIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_GovernCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_InferiorCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ManagerCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_AssistantCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_ManagerCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByAssistantID_OUCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByManagerID_OUCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_byAbnormalCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgentSiteCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindWorkflowAgentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_AgentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_DirectInferiorCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_ManagerCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_NewCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_SignerLevelCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_New1Completed">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteManagerCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_ManagerCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_Manager_NewCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteGovernCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteInferiorCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteDirectInferiorCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_bySiteCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_NewCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_New1Completed">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.ElistQuerySV.ElistQuery.WriteLogCompleted">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ChangeData(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ChangeDataAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ChangeDataAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ExtData(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ExtDataAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ExtDataAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_InfoData(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_InfoDataAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_InfoDataAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserIDAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserIDAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearchAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearchAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserName(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserNameAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserNameAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgent(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgentAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgentAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgent4Site(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgent4SiteAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAgent4SiteAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ExploreEmployee(System.String,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ExploreEmployeeAsync(System.String,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ExploreEmployeeAsync(System.String,System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByDepartment(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByDepartmentAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByDepartmentAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByNotesID(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByNotesIDAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByNotesIDAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Govern(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_GovernAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_GovernAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Inferior(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_InferiorAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_InferiorAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Manager(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ManagerAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_ManagerAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_Assistant(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_AssistantAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_AssistantAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_Manager(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_ManagerAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByOUCode_ManagerAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAssistantID_OU(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAssistantID_OUAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByAssistantID_OUAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByManagerID_OU(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByManagerID_OUAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByManagerID_OUAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_byAbnormal(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_byAbnormalAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_byAbnormalAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgentSite(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgentSiteAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgentSiteAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindWorkflowAgent(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindWorkflowAgentAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindWorkflowAgentAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgent(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgentAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindAgentAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Agent(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_AgentAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_AgentAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_DirectInferior(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_DirectInferiorAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_DirectInferiorAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_ManagerAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_ManagerAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_New(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_NewAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_NewAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_SignerLevel(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_SignerLevelAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_SignerLevelAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_New1(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_New1Async(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Abnormal_Manager_New1Async(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteManager(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteManagerAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteManagerAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_Manager(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_ManagerAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_ManagerAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_Manager_New(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_Manager_NewAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_Site_Manager_NewAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteGovern(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteGovernAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteGovernAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteInferior(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteInferiorAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteInferiorAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteDirectInferior(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteDirectInferiorAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_SiteDirectInferiorAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_bySite(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_bySiteAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.ByUserID_FindSuperManager_bySiteAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_New(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_NewAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_NewAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_New(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_New1Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.UsersSearch_New1Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.WriteLog(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.WriteLogAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.WriteLogAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.ElistQuerySV.ElistQuery.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_ChangeDataCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_ChangeDataCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_ChangeDataCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_ExtDataCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_ExtDataCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_ExtDataCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_InfoDataCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_InfoDataCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_InfoDataCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.UsersSearchCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.UsersSearchCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.UsersSearchCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserNameCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserNameCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserNameCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByAgentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByAgentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByAgentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByAgent4SiteCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByAgent4SiteCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByAgent4SiteCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ExploreEmployeeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ExploreEmployeeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ExploreEmployeeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByDepartmentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByDepartmentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByDepartmentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByNotesIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByNotesIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByNotesIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_GovernCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_GovernCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_GovernCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_InferiorCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_InferiorCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_InferiorCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_ManagerCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_ManagerCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_ManagerCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByOUCode_AssistantCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByOUCode_AssistantCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByOUCode_AssistantCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByOUCode_ManagerCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByOUCode_ManagerCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByOUCode_ManagerCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByAssistantID_OUCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByAssistantID_OUCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByAssistantID_OUCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByManagerID_OUCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByManagerID_OUCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByManagerID_OUCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindSuperManager_byAbnormalCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindSuperManager_byAbnormalCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_FindSuperManager_byAbnormalCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindAgentSiteCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindAgentSiteCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_FindAgentSiteCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindWorkflowAgentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindWorkflowAgentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_FindWorkflowAgentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindAgentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindAgentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_FindAgentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_AgentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_AgentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_AgentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_DirectInferiorCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_DirectInferiorCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_DirectInferiorCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_ManagerCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_ManagerCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_ManagerCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_NewCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_NewCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_NewCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_SignerLevelCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_SignerLevelCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_SignerLevelCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_New1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_New1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_Abnormal_Manager_New1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteManagerCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteManagerCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_SiteManagerCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Site_ManagerCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Site_ManagerCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_Site_ManagerCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Site_Manager_NewCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_Site_Manager_NewCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_Site_Manager_NewCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteGovernCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteGovernCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_SiteGovernCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteInferiorCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteInferiorCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_SiteInferiorCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteDirectInferiorCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_SiteDirectInferiorCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_SiteDirectInferiorCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindSuperManager_bySiteCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.ByUserID_FindSuperManager_bySiteCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.ByUserID_FindSuperManager_bySiteCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.UsersSearch_NewCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.UsersSearch_NewCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.UsersSearch_NewCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.UsersSearch_New1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.UsersSearch_New1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.UsersSearch_New1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.WriteLogCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.ElistQuerySV.WriteLogCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.ElistQuerySV.WriteLogCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.PostmanService">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithScreenShotCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithFreeSpaceCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithForwardCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.UpdateOrderCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetOrderStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.InsertSignHistoryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetEmpNameCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetEmpInfomationCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetEmp_AgentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetEmpAgentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetEmpLevelCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetEmpManagersCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.GetEmpMailCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.SelectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.PostmanSv.PostmanService.ExecuteCompleted">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgs(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithScreenShot(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithScreenShotAsync(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithScreenShotAsync(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithFreeSpace(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithFreeSpaceAsync(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithFreeSpaceAsync(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithForward(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithForwardAsync(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SendHaloMgsWithForwardAsync(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.UpdateOrder(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.UpdateOrderAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.UpdateOrderAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetOrderStatus(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetOrderStatusAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetOrderStatusAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.InsertSignHistory(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime})">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.InsertSignHistoryAsync(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime})">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.InsertSignHistoryAsync(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpName(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpNameAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpNameAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpInfomation(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpInfomationAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpInfomationAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmp_Agent(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmp_AgentAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmp_AgentAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpAgent(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpAgentAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpAgentAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpLevel(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpLevelAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpLevelAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpManagers(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpManagersAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpManagersAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpMail(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpMailAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.GetEmpMailAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.Select(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SelectAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.SelectAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.Execute(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.ExecuteAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.ExecuteAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.PostmanSv.PostmanService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.SendHaloMgsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsWithScreenShotCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsWithScreenShotCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.SendHaloMgsWithScreenShotCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsWithFreeSpaceCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsWithFreeSpaceCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.SendHaloMgsWithFreeSpaceCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsWithForwardCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SendHaloMgsWithForwardCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.SendHaloMgsWithForwardCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.UpdateOrderCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.UpdateOrderCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.UpdateOrderCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetOrderStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetOrderStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetOrderStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.InsertSignHistoryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.InsertSignHistoryCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.InsertSignHistoryCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpNameCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpNameCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetEmpNameCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpInfomationCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpInfomationCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetEmpInfomationCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmp_AgentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmp_AgentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetEmp_AgentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpAgentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpAgentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetEmpAgentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpLevelCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpLevelCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetEmpLevelCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpManagersCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpManagersCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetEmpManagersCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpMailCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.GetEmpMailCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.GetEmpMailCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SelectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.SelectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.SelectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.ExecuteCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.PostmanSv.ExecuteCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.PostmanSv.ExecuteCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.FormService">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowInternetEmailCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowPickListCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowVoipCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowWarelessCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowUcCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowWWWCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowVPNCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowTelPasswordCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowNewTelPasswordCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowSpecialNetCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowNetworkCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ThrowNetletterCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ValidCostNoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.NewValidCostNoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.ValidIENameCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.GetFormStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:RMSExternalApi.sv.FormService.QueryAccoutByGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowInternetEmail(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowInternetEmailAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowInternetEmailAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowPickList(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowPickListAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowPickListAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowVoip(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowVoipAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowVoipAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowWareless(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowWarelessAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowWarelessAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowUc(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowUcAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowUcAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowWWW(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowWWWAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowWWWAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowVPN(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowVPNAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowVPNAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowTelPassword(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowTelPasswordAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowTelPasswordAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNewTelPassword(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNewTelPasswordAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNewTelPasswordAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowSpecialNet(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowSpecialNetAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowSpecialNetAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNetwork(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNetworkAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNetworkAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNetletter(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNetletterAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ThrowNetletterAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ValidCostNo(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ValidCostNoAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ValidCostNoAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.NewValidCostNo(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.NewValidCostNoAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.NewValidCostNoAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ValidIEName(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ValidIENameAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.ValidIENameAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.GetFormStatus(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.GetFormStatusAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.GetFormStatusAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.QueryAccoutByGroup(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.QueryAccoutByGroupAsync(RMSExternalApi.sv.ServiceIn)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.QueryAccoutByGroupAsync(RMSExternalApi.sv.ServiceIn,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RMSExternalApi.sv.FormService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.FHWSoap">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.FHWSoap.UserID">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.FHWSoap.UserPWD">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.FHWSoap.IpAddress">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.FHWSoap.AnyAttr">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ServiceOut">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ServiceOut.Infocode">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ServiceOut.Message">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ServiceOut.Status">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ServiceIn">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ServiceIn.Content">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowInternetEmailCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowInternetEmailCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowInternetEmailCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowPickListCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowPickListCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowPickListCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowVoipCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowVoipCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowVoipCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowWarelessCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowWarelessCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowWarelessCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowUcCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowUcCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowUcCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowWWWCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowWWWCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowWWWCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowVPNCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowVPNCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowVPNCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowTelPasswordCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowTelPasswordCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowTelPasswordCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowNewTelPasswordCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowNewTelPasswordCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowNewTelPasswordCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowSpecialNetCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowSpecialNetCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowSpecialNetCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowNetworkCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowNetworkCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowNetworkCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowNetletterCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ThrowNetletterCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ThrowNetletterCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ValidCostNoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ValidCostNoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ValidCostNoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.NewValidCostNoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.NewValidCostNoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.NewValidCostNoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ValidIENameCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.ValidIENameCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.ValidIENameCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.GetFormStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.GetFormStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.GetFormStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.QueryAccoutByGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:RMSExternalApi.sv.QueryAccoutByGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:RMSExternalApi.sv.QueryAccoutByGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+    </members>
+</doc>

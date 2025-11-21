@@ -1,0 +1,289 @@
+2024/07/17 11:06:49.041 [INFO ] - hello
+2024/07/17 15:36:40.921 [ERROR] - [ER-017] Cannot convert null to 'int' because it is a non-nullable value type   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at RMSExternalApi.Businesses.RMSBusiness.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq data) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Businesses\RMSBusiness.cs:line 1553
+   at RMSExternalApi.Controllers.RMSApiController.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq request) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Controllers\RMSApiController.cs:line 866
+2024/07/17 15:37:14.579 [ERROR] - [ER-017] Cannot convert null to 'int' because it is a non-nullable value type   at CallSite.Target(Closure , CallSite , Object )
+   at RMSExternalApi.Businesses.RMSBusiness.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq data) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Businesses\RMSBusiness.cs:line 1553
+   at RMSExternalApi.Controllers.RMSApiController.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq request) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Controllers\RMSApiController.cs:line 866
+2024/07/17 15:37:32.806 [ERROR] - [ER-017] Cannot convert null to 'int' because it is a non-nullable value type   at CallSite.Target(Closure , CallSite , Object )
+   at RMSExternalApi.Businesses.RMSBusiness.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq data) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Businesses\RMSBusiness.cs:line 1553
+   at RMSExternalApi.Controllers.RMSApiController.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq request) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Controllers\RMSApiController.cs:line 866
+2024/07/17 15:38:21.152 [ERROR] - [ER-017] Cannot convert null to 'int' because it is a non-nullable value type   at CallSite.Target(Closure , CallSite , Object )
+   at RMSExternalApi.Businesses.RMSBusiness.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq data) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Businesses\RMSBusiness.cs:line 1553
+   at RMSExternalApi.Controllers.RMSApiController.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq request) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Controllers\RMSApiController.cs:line 866
+2024/08/21 10:00:58.941 [ERROR] - [ER-017] ORA-00903: invalid table name   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType)
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Dapper.SqlMapper.QueryFirstOrDefault(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSBusiness.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq data) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Businesses\RMSBusiness.cs:line 1593
+   at RMSExternalApi.Controllers.RMSApiController.GetJobLsOfSeekRecruitment(JobOfSeekRecruitmentReq request) in C:\Temp\RMSExternalSystem\RMSExternalApi\RMSExternalApi\Controllers\RMSApiController.cs:line 871
+2025/10/21 16:00:20.925 [ERROR] - [ER-202510211503] ORA-00001: unique constraint (RMSTEST.SYS_C0013204) violated   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSBusiness.SaveOTP(String mail, String OTP) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZ20251021\RMSExternalApi\Businesses\RMSBusiness.cs:line 2910
+   at RMSExternalApi.Controllers.RMSApiController.LoginWithEmail(LoginWithEmailReq req) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZ20251021\RMSExternalApi\Controllers\RMSApiController.cs:line 1654
+2025/10/22 10:45:05.232 [ERROR] - [ER-202510221030] Connection must be open for this operation   at Oracle.ManagedDataAccess.Types.OracleClob..ctor(OracleConnection connection, Boolean bCaching, Boolean bNClob)
+   at Oracle.ManagedDataAccess.Types.OracleClob..ctor(OracleConnection con)
+   at RMSExternalApi.Commons.DB.OracleClobParameter.AddParameter(IDbCommand command, String name) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZ20251021\RMSExternalApi\Commons\DB\OracleClobParameter.cs:line 26
+   at ParamInfoe4ffbf7b-3c22-4b03-adcb-e0fab7cab56d(IDbCommand , Object )
+   at Dapper.CommandDefinition.SetupCommand(IDbConnection cnn, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSBusiness.SaveCVTemplate(CVTemplate cVTemplate) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZ20251021\RMSExternalApi\Businesses\RMSBusiness.cs:line 3021
+   at RMSExternalApi.Controllers.RMSApiController.ModifyCVTemplate(CVTemplate cVTemplate) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZ20251021\RMSExternalApi\Controllers\RMSApiController.cs:line 1969
+2025/10/24 13:36:18.404 [ERROR] - [ER-202510221656] ORA-00984: column not allowed here   at RMSExternalApi.Businesses.RMSBusiness.AddCVForExternalJob(CVForExternalJob cv) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZ20251021\RMSExternalApi\Businesses\RMSBusiness.cs:line 3261
+   at RMSExternalApi.Controllers.RMSApiController.ModifyCVForExternalJob(CVForExternalJob cVForExternalJob) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZ20251021\RMSExternalApi\Controllers\RMSApiController.cs:line 2287
+2025/10/24 16:21:33.284 [INFO ] - Send mail success,mailData: MAIL_TO:vn-it-app@fii-foxconn.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/24 17:16:40.911 [INFO ] - Send mail success,mailData: MAIL_TO:abc@mail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/25 09:26:38.470 [INFO ] - Send mail success,mailData: MAIL_TO:vn-it-app@fii.foxconn.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/25 09:28:46.159 [INFO ] - Send mail success,mailData: MAIL_TO:vn-it-app@fii-foxconn.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/27 16:07:44.685 [INFO ] - Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/27 17:30:58.142 [ERROR] - [ER-202510221657] Could not find a part of the path.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.__Error.WinIOError()
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at RMSExternalApi.Controllers.RMSCVForExternalJobController.<UploadFileCVForExternalJob1>d__5.MoveNext() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSCVForExternalJobController.cs:line 605
+2025/10/28 08:27:09.146 [INFO ] - Send mail success,mailData: MAIL_TO:abc@mail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/28 10:08:40.244 [INFO ] - Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/29 17:12:14.853 [ERROR] - [ER-202510211503] ORA-00001: unique constraint (RMSTEST.SYS_C0013204) violated   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSAccountBusiness.SaveOTP(String key, String OTP) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSAccountBusiness.cs:line 56
+   at RMSExternalApi.Controllers.RMSAccountController.LoginWithEmail(LoginWithEmail req) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSAccountController.cs:line 79
+2025/10/29 17:15:06.616 [INFO ] - Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/30 10:33:06.118 [ERROR] - [ER-202510301021] Object reference not set to an instance of an object.   at RMSExternalApi.Controllers.RMSFileController.<DownloadFile>d__2.MoveNext() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSFileController.cs:line 173
+2025/10/30 10:33:50.626 [ERROR] - [ER-202510301021] Object reference not set to an instance of an object.   at RMSExternalApi.Controllers.RMSFileController.<DownloadFile>d__2.MoveNext() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSFileController.cs:line 173
+2025/10/30 15:56:22.229 [ERROR] - [ER-202510301021] Object reference not set to an instance of an object.   at RMSExternalApi.Businesses.RMSAccountBusiness.GetAccountInforFromCurJWT() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSAccountBusiness.cs:line 151
+   at RMSExternalApi.Controllers.RMSFileController.<DownloadFile>d__2.MoveNext() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSFileController.cs:line 139
+2025/10/30 16:43:01.626 [INFO ] - Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/31 13:49:12.947 [INFO ] - Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/10/31 13:50:27.526 [ERROR] - [ER-2025103031553] ORA-01841: (full) year must be between -4713 and +9999, and not be 0   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSEmployeeBusiness.AddEmployeeRegisterInterview(EmployeeRegister employee, String jobMail, String jobPhone) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSEmployeeBusiness.cs:line 55
+   at RMSExternalApi.Controllers.RMSEmployeeController.EmpRegisterInterviewWorker(EmployeeRegister employee) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSEmployeeController.cs:line 85
+2025/10/31 13:55:55.252 [ERROR] - [ER-2025103031553] ORA-01841: (full) year must be between -4713 and +9999, and not be 0   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSEmployeeBusiness.AddEmployeeRegisterInterview(EmployeeRegister employee, String jobMail, String jobPhone) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSEmployeeBusiness.cs:line 55
+   at RMSExternalApi.Controllers.RMSEmployeeController.EmpRegisterInterviewWorker(EmployeeRegister employee) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSEmployeeController.cs:line 85
+2025/10/31 17:18:38.115 [INFO ] - Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/01 17:27:30.429 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:34.488 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:35.318 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:35.919 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:36.390 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:36.820 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:37.214 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:37.670 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:38.167 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:38.644 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:39.196 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:27:39.558 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:14.642 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:15.225 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:15.615 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:16.026 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:16.416 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:16.825 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:17.208 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:17.632 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:18.474 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:42.265 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:42.713 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:43.134 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:43.519 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:43.883 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:44.287 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:44.672 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:45.064 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:45.410 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:45.833 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:46.192 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:28:46.586 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:46.691 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:46.833 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:47.012 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:47.139 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:47.265 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:47.415 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:47.569 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:47.730 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:47.890 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:48.046 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:48.210 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:48.376 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:48.547 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:48.679 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:48.848 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:48.986 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:49.153 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:49.349 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:49.481 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:49.647 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:49.848 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:49.984 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:29:50.136 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:28.107 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:28.261 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:28.452 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:28.611 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:28.766 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:28.957 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:29.060 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:29.211 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:29.354 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:29.505 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:29.665 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:29.820 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:29.970 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:30.155 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:30.285 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:30.437 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:30.580 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:30.731 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:30.890 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:31.034 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:31.211 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:31.369 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:31.531 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:31.698 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:31.980 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:32.162 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:30:32.485 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:57.213 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:57.355 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:57.491 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:57.673 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:57.771 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:57.908 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:58.074 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:58.182 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:58.323 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:58.466 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:58.596 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:58.788 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:58.882 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:59.042 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:59.172 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:59.306 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:59.475 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:59.595 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:59.758 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:31:59.895 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:32:00.061 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:32:00.195 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:32:00.375 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:32:00.587 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:32:00.788 [ERROR] - [IP:::1,acc:]test
+2025/11/01 17:32:00.886 [ERROR] - [IP:::1,acc:]test
+2025/11/03 07:57:34.146 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/03 10:24:24.290 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/03 15:56:52.266 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/03 16:43:03.257 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/03 16:44:03.913 [ERROR] - [IP:::1,acc:abc@gmail.com][ER-202510241439] Unsupported column datatype   at Oracle.ManagedDataAccess.Client.OracleParameter.PreBind(OracleConnectionImpl connImpl, ColumnDescribeInfo cachedParamMetadata, Boolean& bMetadataModified, Int32 arrayBindCount, ColumnDescribeInfo& paramMetaData, Object& paramValue, Boolean isEFSelectStatement, SqlStatementType stmtType)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.InitializeParamInfo(ICollection paramColl, OracleConnectionImpl connectionImpl, ColumnDescribeInfo[] cachedParamMetadata, Boolean& bMetadataModified, Boolean isEFSelectStatement, MarshalBindParameterValueHelper& marshalBindValuesHelper)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ProcessParameters(OracleParameterCollection paramColl, OracleConnectionImpl connectionImpl, ColumnDescribeInfo[] cachedParamMetadata, Boolean& bBindMetadataModified, Boolean isEFSelectStatement, MarshalBindParameterValueHelper& marshalBindValuesHelper)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetAmProcessLsOfTPID(String TPID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSCVExternalJobBusiness.cs:line 462
+   at RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetCVForExternalJob(String tpID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSCVExternalJobBusiness.cs:line 599
+   at RMSExternalApi.Controllers.RMSCVForExternalJobController.GetCVForExternalJob(String tpID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSCVForExternalJobController.cs:line 110
+2025/11/03 16:44:18.276 [ERROR] - [IP:::1,acc:abc@gmail.com][ER-202510241439] Unsupported column datatype   at Oracle.ManagedDataAccess.Client.OracleParameter.PreBind(OracleConnectionImpl connImpl, ColumnDescribeInfo cachedParamMetadata, Boolean& bMetadataModified, Int32 arrayBindCount, ColumnDescribeInfo& paramMetaData, Object& paramValue, Boolean isEFSelectStatement, SqlStatementType stmtType)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.InitializeParamInfo(ICollection paramColl, OracleConnectionImpl connectionImpl, ColumnDescribeInfo[] cachedParamMetadata, Boolean& bMetadataModified, Boolean isEFSelectStatement, MarshalBindParameterValueHelper& marshalBindValuesHelper)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ProcessParameters(OracleParameterCollection paramColl, OracleConnectionImpl connectionImpl, ColumnDescribeInfo[] cachedParamMetadata, Boolean& bBindMetadataModified, Boolean isEFSelectStatement, MarshalBindParameterValueHelper& marshalBindValuesHelper)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetAmProcessLsOfTPID(String TPID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSCVExternalJobBusiness.cs:line 462
+   at RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetCVForExternalJob(String tpID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSCVExternalJobBusiness.cs:line 599
+   at RMSExternalApi.Controllers.RMSCVForExternalJobController.GetCVForExternalJob(String tpID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSCVForExternalJobController.cs:line 110
+2025/11/03 16:46:21.928 [ERROR] - [IP:::1,acc:abc@gmail.com][ER-202510241439] Unsupported column datatype   at Oracle.ManagedDataAccess.Client.OracleParameter.PreBind(OracleConnectionImpl connImpl, ColumnDescribeInfo cachedParamMetadata, Boolean& bMetadataModified, Int32 arrayBindCount, ColumnDescribeInfo& paramMetaData, Object& paramValue, Boolean isEFSelectStatement, SqlStatementType stmtType)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.InitializeParamInfo(ICollection paramColl, OracleConnectionImpl connectionImpl, ColumnDescribeInfo[] cachedParamMetadata, Boolean& bMetadataModified, Boolean isEFSelectStatement, MarshalBindParameterValueHelper& marshalBindValuesHelper)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ProcessParameters(OracleParameterCollection paramColl, OracleConnectionImpl connectionImpl, ColumnDescribeInfo[] cachedParamMetadata, Boolean& bBindMetadataModified, Boolean isEFSelectStatement, MarshalBindParameterValueHelper& marshalBindValuesHelper)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetAmProcessLsOfTPID(String TPID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSCVExternalJobBusiness.cs:line 462
+   at RMSExternalApi.Businesses.RMSCVExternalJobBusiness.GetCVForExternalJob(String tpID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSCVExternalJobBusiness.cs:line 599
+   at RMSExternalApi.Controllers.RMSCVForExternalJobController.GetCVForExternalJob(String tpID) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSCVForExternalJobController.cs:line 110
+2025/11/03 17:19:26.933 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/04 09:44:25.941 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/04 13:32:01.246 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/04 13:44:26.935 [INFO ] - [IP:::1,acc:abc@gmail.com]Send mail success,mailData: MAIL_TO:tuyentuyen14test1@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng
+2025/11/04 19:53:53.465 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System
+2025/11/04 19:53:53.464 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System
+2025/11/05 08:38:12.060 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:tuyentuyen14test1@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System
+2025/11/06 09:35:31.666 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System
+2025/11/07 11:24:55.798 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@mail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System
+2025/11/07 13:54:06.445 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System
+2025/11/07 14:59:21.526 [ERROR] - [IP:::1,acc:][ER-202510221030] ORA-12570: Network Session: Unexpected packet read error   at Oracle.ManagedDataAccess.Client.OracleException.HandleError(OracleTraceLevel level, OracleTraceTag tag, OracleTraceClassName className, OracleTraceFuncName funcName, Exception ex, OracleLogicalTransaction oracleLogicalTransaction)
+   at OracleInternal.TTC.TTCExecuteSql.ReceiveExecuteResponse(Accessor[]& defineAccessors, Accessor[] bindAccessors, Boolean bHasReturningParams, SQLMetaData& sqlMetaData, SqlStatementType statementType, Int64 noOfRowsFetchedLastTime, Int32 noOfRowsToFetch, Int32& noOfRowsFetched, Int64& queryId, Int32 longFetchSize, Int64 initialLOBFetchSize, Int64[] scnFromExecution, Boolean bAllInputBinds, Int32 arrayBindCount, DataUnmarshaller& dataUnmarshaller, MarshalBindParameterValueHelper& marshalBindParamsHelper, Int64[]& rowsAffectedByArrayBind, Boolean bDefineDone, Boolean& bMoreThanOneRowAffectedByDmlWithRetClause, List`1& implicitRSList, Boolean bLOBArrayFetchRequired)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType)
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at RMSExternalApi.Businesses.RMSAccountBusiness.GetAccountInforByMail(String mail) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSAccountBusiness.cs:line 80
+   at RMSExternalApi.Businesses.RMSAccountBusiness.GetAccountInforFromCurJWT() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Businesses\RMSAccountBusiness.cs:line 165
+   at RMSExternalApi.Controllers.RMSAPIBaseController.CheckHaveUpdatedEmailForAccount() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSAPIBaseController.cs:line 155
+   at RMSExternalApi.Controllers.RMSProfileController.ModifyProfile(CVTemplate cVTemplate) in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSProfileController.cs:line 76
+2025/11/07 15:21:40.682 [ERROR] - [IP:::1,acc:abc@gmail.com][ER-202510291613] Unexpected end of MIME multipart stream. MIME multipart message is not complete.   at System.Net.Http.Formatting.Parsers.MimeMultipartBodyPartParser.<ParseBuffer>d__15.MoveNext()
+   at System.Net.Http.HttpContentMultipartExtensions.<MultipartReadAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpContentMultipartExtensions.<ReadAsMultipartAsync>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at RMSExternalApi.Controllers.RMSAPIBaseController.<HandleBlockUploadMutilFilesForPdf>d__0.MoveNext() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSAPIBaseController.cs:line 84
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at RMSExternalApi.Controllers.RMSProfileController.<UploadFileAttachToProfile>d__2.MoveNext() in C:\Temp\RMSExternalSystem\HRRecruitPortalAPIForDMZNow\RMSExternalApi\Controllers\RMSProfileController.cs:line 206
+2025/11/07 15:46:52.059 [INFO ] - [IP:::1,acc:abc@gmail.com]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System
+2025/11/18 10:48:27.648 [INFO ] - [IP:::1,acc:]Send mail success,mailData: MAIL_TO:abc@gmail.com , MAIL_CC:, MAIL_SUBJECT:Foxconn-H? th?ng ??ng ky tuy?n d?ng/Foxconn-Recruitment System

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.34112.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMSExternalApi", "RMSExternalApi\RMSExternalApi.csproj", "{EBE07DE7-CC46-42F0-9A0B-1E1090D14496}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE07DE7-CC46-42F0-9A0B-1E1090D14496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE07DE7-CC46-42F0-9A0B-1E1090D14496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE07DE7-CC46-42F0-9A0B-1E1090D14496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE07DE7-CC46-42F0-9A0B-1E1090D14496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A2E44B7-B6E1-4049-A43C-076A4C4A29CD}
+	EndGlobalSection
+EndGlobal

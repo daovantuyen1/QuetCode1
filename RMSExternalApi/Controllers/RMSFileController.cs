@@ -71,6 +71,22 @@ namespace RMSExternalApi.Controllers
                 }
 
 
+                 if (fileUrl?.ToLower().StartsWith("file://")==true
+                    || fileUrl?.ToLower().StartsWith("dict://") == true
+                    || fileUrl?.ToLower().StartsWith("ftp://") == true
+                      || fileUrl?.ToLower().StartsWith("gopher://") == true
+                    )
+                {
+                    var result1 = new HttpResponseMessage(HttpStatusCode.NotFound)
+                    {
+                        Content = new StringContent($"File Url not in allowed list")
+                    };
+                    return result1;
+
+                }
+                
+
+
                 // 2. Tải File từ URL bằng HttpClient
                 using (var httpClient = new HttpClient())
                 {
